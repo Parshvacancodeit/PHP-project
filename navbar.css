@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.nav-containet {
+    position: relative;
+    background-color: #F3F8FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#img{
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+
+.Link-sec ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Link-sec ul li {
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    line-height: 1.4;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.Link-sec ul li:hover {
+    color: #FF4C4C;
+    background-color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.Link-sec ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Login-button-sec {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Login-button-sec button {
+    height: 45px;
+    padding: 7px 20px;
+    background-color: #FF4C4C;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #d32f2f;
+    border-radius: 5px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+}
+
+.Login-button-sec button:hover {
+    background-color: #d32f2f;
+    border-color: #b71c1c;
+    transform: translateY(-2px);
+}
+
+.logout-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: #F3F8FF;
+    font-weight: 500;
+}
+
+.logout-box a button {
+    background-color: #1091fa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-box a button:hover {
+    background-color: #0085dd;
+}

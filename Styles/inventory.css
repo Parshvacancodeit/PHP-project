@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inventory-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.inventory-form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.inventory-form input[type="text"],
+.inventory-form input[type="number"] {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.inventory-form input:focus {
+    border: 1px solid #333;
+}
+
+.inventory-form button {
+    grid-column: span 2;
+    background-color: #FF4C4C;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 25px 0px 45px 0px;
+    
+}
+
+.inventory-form button:hover {
+    background-color: #e04444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.inventory-table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.inventory-table th,
+.inventory-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.inventory-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.inventory-table td {
+    background-color: #fff;
+    color: #333;
+}
+
+.inventory-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.inventory-table td button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #FF4C4C;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #e04444;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .inventory-container {
+        padding: 20px;
+    }
+
+    .inventory-form {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-table {
+        font-size: 14px;
+    }
+
+    .inventory-form button {
+        font-size: 14px;
+    }
+}

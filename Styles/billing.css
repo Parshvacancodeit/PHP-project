@@ -1,0 +1,141 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    color: #333; /* Default text color */
+}
+
+/* Billing container */
+.bill-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 20%;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #000000; /* Main color theme */
+    margin-bottom: 20px;
+    font-weight: 600; /* Stronger font weight for headings */
+}
+
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Soft background for forms */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px; /* Slightly smaller font size for labels */
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #FF4C4C; /* Highlight on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Buttons */
+button[type="submit"], button[name="checkout"] {
+    background-color: #FF4C4C; /* Main color theme */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover, button[name="checkout"]:hover {
+    background-color: #e03e3e; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff; /* White background for the table */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #FF4C4C; /* Header background */
+    color: white;
+    font-weight: bold; /* Stronger font weight for header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+tbody tr:hover {
+    background-color: #FFB2B2; /* Light hover effect */
+}
+
+/* Error message */
+p {
+    color: #FF4C4C; /* Main color theme */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bill-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    button[type="submit"], button[name="checkout"] {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Additional styles for better user experience */
+input::placeholder {
+    color: #bbb; /* Placeholder color */
+}
+
+input[type="text"]:focus::placeholder, input[type="number"]:focus::placeholder {
+    color: transparent; /* Hide placeholder on focus */
+}
+
+button {
+    font-family: inherit; /* Ensure button inherits font */
+}
+
